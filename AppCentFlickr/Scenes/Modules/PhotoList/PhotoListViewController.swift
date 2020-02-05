@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class PhotoListViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class PhotoListViewController: UIViewController {
         }
     }
     
+    private let hud = JGProgressHUD(style: .dark)
     private var photoList: [PhotoPresentation] = []
     
     override func viewDidLoad() {
@@ -32,7 +34,7 @@ class PhotoListViewController: UIViewController {
         tableView.dataSource = self
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9311670661, green: 0.2990694046, blue: 0.3270647526, alpha: 1)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-
+        hud.textLabel.text = "Yükleniyor"
     }
 }
 
@@ -40,9 +42,9 @@ extension PhotoListViewController: PhotoListViewModelDelegate {
     func handleViewModelOutput(_ output: PhotoListViewModelOutput) {
         switch output {
         case .setLoading(let isLoading):
-            print(isLoading)
+            isLoading ? hud.show(in: self.view) : hud.dismiss()
         case .showPhotoList(let photos):
-            self.photoList = photos
+            self.photoList.append(contentsOf: photos)
             self.tableView.reloadData()
         }
     }
@@ -54,15 +56,25 @@ extension PhotoListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = photoList[indexPath.row].title
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PhotoCell
+        cell?.photo = photoList[indexPath.row]
+        return cell!
+    }
+    
+    //Paging
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == self.photoList.count-1 {
+            viewModel.load()
+        }
     }
 }
 
 extension PhotoListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
     }
 }
 

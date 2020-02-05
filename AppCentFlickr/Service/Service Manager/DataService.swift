@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 public protocol DataServiceProtocol {
-    func getPhotosFromService(completion: @escaping (Result<PhotoResponse>)->Void)
+    func getPhotosFromService(page: Int, completion: @escaping (Result<PhotoResponse>)->Void)
 }
 
 public class DataService: DataServiceProtocol {
@@ -19,7 +19,8 @@ public class DataService: DataServiceProtocol {
     
     private init() { } //singleton
     
-    public func getPhotosFromService(completion: @escaping (Result<PhotoResponse>) -> Void) {
+    public func getPhotosFromService(page: Int, completion: @escaping (Result<PhotoResponse>) -> Void) {
+        APIConstant.PAGE = page
         let params = [
             "method": APIConstant.METHOD_ENDPOINT,
             "api_key": APIConstant.API_KEY,
