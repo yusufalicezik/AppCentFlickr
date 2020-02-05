@@ -19,10 +19,11 @@ enum PhotoListViewModelOutput {
     case showPhotoList([PhotoPresentation])
 }
 
-//enum PhotoListViewRoute {
-//    case detail()
-//}
+enum PhotoListViewRoute {
+    case detail(DetailViewModelProtocol)
+}
 
 protocol PhotoListViewModelDelegate: class {
     func handleViewModelOutput(_ output: PhotoListViewModelOutput)
+    func navigate(to route: PhotoListViewRoute)
 }

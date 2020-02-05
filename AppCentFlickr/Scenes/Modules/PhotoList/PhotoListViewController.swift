@@ -39,6 +39,7 @@ class PhotoListViewController: UIViewController {
 }
 
 extension PhotoListViewController: PhotoListViewModelDelegate {
+    
     func handleViewModelOutput(_ output: PhotoListViewModelOutput) {
         switch output {
         case .setLoading(let isLoading):
@@ -46,6 +47,14 @@ extension PhotoListViewController: PhotoListViewModelDelegate {
         case .showPhotoList(let photos):
             self.photoList.append(contentsOf: photos)
             self.tableView.reloadData()
+        }
+    }
+    
+    func navigate(to route: PhotoListViewRoute) {
+        switch route {
+        case .detail(let viewModel):
+            let detailVC = DetailBuilder.make(with: viewModel)
+            show(detailVC, sender: nil)
         }
     }
 }
@@ -71,7 +80,7 @@ extension PhotoListViewController: UITableViewDataSource {
 
 extension PhotoListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        
+        viewModel.didSelectMovie(at: indexPath.row)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
