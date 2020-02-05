@@ -1,5 +1,5 @@
 //
-//  PhotoListContracts.swift
+//  AppContainer.swift
 //  AppCentFlickr
 //
 //  Created by Yusuf ali cezik on 5.02.2020.
@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+let app = AppContainer()
+
+final class AppContainer {
+    
+    let router = AppRouter()
+    let service = DataService.shared
+}
