@@ -12,4 +12,5 @@ public struct Photo: Decodable {
     var id: String
     var owner: String
     var title: String
+    var secret: String
 }

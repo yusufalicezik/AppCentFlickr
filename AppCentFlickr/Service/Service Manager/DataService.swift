@@ -36,15 +36,13 @@ public class DataService: DataServiceProtocol {
                 do {
                     let response = try JSONDecoder().decode(PhotoResponse.self, from: response.data!)
                     completion(.success(response))
-                }catch {
-                    
+                }catch(let err) {
+                    completion(.failure(err))
                 }
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }
 }
-
-//https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=d64afbb07b382b05ac8082d197854500&per_page=20&page=1&format=json&nojsoncallback=1
 
