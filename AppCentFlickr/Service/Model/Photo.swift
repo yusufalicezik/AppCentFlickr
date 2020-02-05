@@ -13,4 +13,6 @@ public struct Photo: Decodable {
     var owner: String
     var title: String
     var secret: String
+    var farm: Int
+    var server: String
 }

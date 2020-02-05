@@ -9,6 +9,7 @@ target 'AppCentFlickr' do
 
 pod 'JGProgressHUD'
 pod 'Alamofire'
+pod 'SDWebImage'
 
 
 end

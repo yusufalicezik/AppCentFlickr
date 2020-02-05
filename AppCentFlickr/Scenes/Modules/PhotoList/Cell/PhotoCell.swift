@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PhotoCell: UITableViewCell {
 
@@ -16,6 +17,7 @@ class PhotoCell: UITableViewCell {
     public var photo: PhotoPresentation! {
         didSet {
             photoTitleLabel.text = photo.title
+            photoImageView.sd_setImage(with: URL(string: "https://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret)_m_d.jpg"), completed: nil)
         }
     }
     

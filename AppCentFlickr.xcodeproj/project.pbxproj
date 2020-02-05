@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4859257223EB2ED2004F76B6 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4859257123EB2ED2004F76B6 /* Photo.storyboard */; };
+		4859257423EB3C3A004F76B6 /* DetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257323EB3C3A004F76B6 /* DetailContracts.swift */; };
+		4859257623EB3C42004F76B6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257523EB3C42004F76B6 /* DetailViewModel.swift */; };
+		4859257823EB3C4D004F76B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257723EB3C4D004F76B6 /* DetailViewController.swift */; };
+		4859257A23EB3C55004F76B6 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257923EB3C55004F76B6 /* DetailBuilder.swift */; };
 		48ADDED723EAF58200CC48F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADDED623EAF58200CC48F1 /* AppDelegate.swift */; };
 		48ADDEDB23EAF58200CC48F1 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADDEDA23EAF58200CC48F1 /* PhotoListViewController.swift */; };
 		48ADDEE023EAF58800CC48F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48ADDEDF23EAF58800CC48F1 /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 
 /* Begin PBXFileReference section */
 		4859257123EB2ED2004F76B6 /* Photo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
+		4859257323EB3C3A004F76B6 /* DetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContracts.swift; sourceTree = "<group>"; };
+		4859257523EB3C42004F76B6 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		4859257723EB3C4D004F76B6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4859257923EB3C55004F76B6 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
 		48ADDED323EAF58200CC48F1 /* AppCentFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCentFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ADDED623EAF58200CC48F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ADDEDA23EAF58200CC48F1 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +137,10 @@
 		48ADDEEF23EAF61700CC48F1 /* PhotoDetail */ = {
 			isa = PBXGroup;
 			children = (
+				4859257323EB3C3A004F76B6 /* DetailContracts.swift */,
+				4859257523EB3C42004F76B6 /* DetailViewModel.swift */,
+				4859257723EB3C4D004F76B6 /* DetailViewController.swift */,
+				4859257923EB3C55004F76B6 /* DetailBuilder.swift */,
 			);
 			path = PhotoDetail;
 			sourceTree = "<group>";
@@ -332,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48ADDF0C23EB1B6600CC48F1 /* AppContainer.swift in Sources */,
+				4859257823EB3C4D004F76B6 /* DetailViewController.swift in Sources */,
 				48ADDF1123EB1C4F00CC48F1 /* PhotoCell.swift in Sources */,
 				48ADDEFE23EB003300CC48F1 /* PhotoPresentation.swift in Sources */,
 				48ADDEFC23EB002800CC48F1 /* Photo.swift in Sources */,
@@ -339,12 +352,15 @@
 				48ADDF0E23EB1B7100CC48F1 /* AppRouter.swift in Sources */,
 				48ADDF0623EB056400CC48F1 /* PhotoResponse.swift in Sources */,
 				48ADDEDB23EAF58200CC48F1 /* PhotoListViewController.swift in Sources */,
+				4859257423EB3C3A004F76B6 /* DetailContracts.swift in Sources */,
 				48ADDEF723EAFEE700CC48F1 /* PhotoListViewModel.swift in Sources */,
 				48ADDED723EAF58200CC48F1 /* AppDelegate.swift in Sources */,
 				48ADDEF323EAFED100CC48F1 /* PhotoListBuilder.swift in Sources */,
 				48ADDEF523EAFEDE00CC48F1 /* PhotoListContracts.swift in Sources */,
+				4859257A23EB3C55004F76B6 /* DetailBuilder.swift in Sources */,
 				48ADDF0223EB004C00CC48F1 /* DataService.swift in Sources */,
 				48ADDF0423EB006D00CC48F1 /* Result.swift in Sources */,
+				4859257623EB3C42004F76B6 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
