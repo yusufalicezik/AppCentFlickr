@@ -11,3 +11,8 @@ import Foundation
 protocol DetailViewModelDelegate: class {
     func showFullImage (_ presentation: PhotoPresentation)
 }
+
+protocol DetailViewModelProtocol {
+    var delegate: DetailViewModelDelegate? { get set }
+    func load()
+}

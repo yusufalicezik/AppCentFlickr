@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class DetailViewModel: DetailViewModelProtocol {
+    
+    weak var delegate: DetailViewModelDelegate?
+    private let presentation: PhotoPresentation
+    
+    init(photo: Photo) {
+        self.presentation = PhotoPresentation(photo: photo)
+    }
+    
+    func load() {
+        delegate?.showFullImage(presentation)
+    }
+}

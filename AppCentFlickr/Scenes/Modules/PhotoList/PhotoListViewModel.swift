@@ -27,7 +27,7 @@ final class PhotoListViewModel: PhotoListViewModelProtocol {
             switch result {
             case .success(let response):
                 self.currentPage+=1
-                self.photos = response.results
+                self.photos.append(contentsOf: response.results)
                 let presentations = response.results.map({ PhotoPresentation(photo: $0) })
                 self.delegate?.handleViewModelOutput(.showPhotoList(presentations))
             case .failure(let error):
@@ -37,7 +37,9 @@ final class PhotoListViewModel: PhotoListViewModelProtocol {
     }
     
     func didSelectMovie(at index: Int) {
-        
+        let photo = photos[index]
+        let viewModel = DetailViewModel(photo: photo)
+        delegate?.navigate(to: .detail(viewModel))
     }
     
     
