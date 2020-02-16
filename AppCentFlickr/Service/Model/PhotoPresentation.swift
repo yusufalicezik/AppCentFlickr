@@ -9,7 +9,7 @@
 import Foundation
 
 //Modeli viewdan ayırmak için DTO görevi gören presentation sınıfı
-class PhotoPresentation {
+class PhotoPresentation: NSObject {
       var id: String
       var title: String
       var secret: String
@@ -23,10 +23,14 @@ class PhotoPresentation {
         self.farm = farm
         self.secret = secret
     }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let other = object as? PhotoPresentation else { return false }
+        return self.id == other.id
+    }
 }
 
 extension PhotoPresentation {
-    
     convenience init(photo: Photo) {
         self.init(id: photo.id ,title: photo.title, photo.server, photo.farm, photo.secret)
     }

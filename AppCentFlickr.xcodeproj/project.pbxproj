@@ -12,6 +12,7 @@
 		4859257623EB3C42004F76B6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257523EB3C42004F76B6 /* DetailViewModel.swift */; };
 		4859257823EB3C4D004F76B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257723EB3C4D004F76B6 /* DetailViewController.swift */; };
 		4859257A23EB3C55004F76B6 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859257923EB3C55004F76B6 /* DetailBuilder.swift */; };
+		4859BFBE23F8B5EB005DBBD1 /* AppCentFlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859BFBD23F8B5EB005DBBD1 /* AppCentFlickrTests.swift */; };
 		48ADDED723EAF58200CC48F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADDED623EAF58200CC48F1 /* AppDelegate.swift */; };
 		48ADDEDB23EAF58200CC48F1 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADDEDA23EAF58200CC48F1 /* PhotoListViewController.swift */; };
 		48ADDEE023EAF58800CC48F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48ADDEDF23EAF58800CC48F1 /* Assets.xcassets */; };
@@ -32,12 +33,25 @@
 		AEC3DBD572E2B0897650F5C4 /* Pods_AppCentFlickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D6766C71282BFCBA7EC7C /* Pods_AppCentFlickr.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4859BFC023F8B5EB005DBBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48ADDECB23EAF58200CC48F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48ADDED223EAF58200CC48F1;
+			remoteInfo = AppCentFlickr;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4859257123EB2ED2004F76B6 /* Photo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
 		4859257323EB3C3A004F76B6 /* DetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContracts.swift; sourceTree = "<group>"; };
 		4859257523EB3C42004F76B6 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		4859257723EB3C4D004F76B6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4859257923EB3C55004F76B6 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		4859BFBB23F8B5EB005DBBD1 /* AppCentFlickrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCentFlickrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4859BFBD23F8B5EB005DBBD1 /* AppCentFlickrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCentFlickrTests.swift; sourceTree = "<group>"; };
+		4859BFBF23F8B5EB005DBBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48ADDED323EAF58200CC48F1 /* AppCentFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCentFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ADDED623EAF58200CC48F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ADDEDA23EAF58200CC48F1 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4859BFB823F8B5EB005DBBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48ADDED023EAF58200CC48F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,10 +95,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4859BFBC23F8B5EB005DBBD1 /* AppCentFlickrTests */ = {
+			isa = PBXGroup;
+			children = (
+				4859BFBD23F8B5EB005DBBD1 /* AppCentFlickrTests.swift */,
+				4859BFBF23F8B5EB005DBBD1 /* Info.plist */,
+			);
+			path = AppCentFlickrTests;
+			sourceTree = "<group>";
+		};
 		48ADDECA23EAF58200CC48F1 = {
 			isa = PBXGroup;
 			children = (
 				48ADDED523EAF58200CC48F1 /* AppCentFlickr */,
+				4859BFBC23F8B5EB005DBBD1 /* AppCentFlickrTests */,
 				48ADDED423EAF58200CC48F1 /* Products */,
 				B861C6240316B8EF490AEA40 /* Pods */,
 				65848A6D338C007FF6BDC1BB /* Frameworks */,
@@ -88,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				48ADDED323EAF58200CC48F1 /* AppCentFlickr.app */,
+				4859BFBB23F8B5EB005DBBD1 /* AppCentFlickrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +262,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4859BFBA23F8B5EB005DBBD1 /* AppCentFlickrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4859BFC423F8B5EB005DBBD1 /* Build configuration list for PBXNativeTarget "AppCentFlickrTests" */;
+			buildPhases = (
+				4859BFB723F8B5EB005DBBD1 /* Sources */,
+				4859BFB823F8B5EB005DBBD1 /* Frameworks */,
+				4859BFB923F8B5EB005DBBD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4859BFC123F8B5EB005DBBD1 /* PBXTargetDependency */,
+			);
+			name = AppCentFlickrTests;
+			productName = AppCentFlickrTests;
+			productReference = 4859BFBB23F8B5EB005DBBD1 /* AppCentFlickrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		48ADDED223EAF58200CC48F1 /* AppCentFlickr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48ADDEE723EAF58800CC48F1 /* Build configuration list for PBXNativeTarget "AppCentFlickr" */;
@@ -259,6 +309,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Yusuf Ali Cezik";
 				TargetAttributes = {
+					4859BFBA23F8B5EB005DBBD1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 48ADDED223EAF58200CC48F1;
+					};
 					48ADDED223EAF58200CC48F1 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -278,11 +332,19 @@
 			projectRoot = "";
 			targets = (
 				48ADDED223EAF58200CC48F1 /* AppCentFlickr */,
+				4859BFBA23F8B5EB005DBBD1 /* AppCentFlickrTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4859BFB923F8B5EB005DBBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48ADDED123EAF58200CC48F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +401,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4859BFB723F8B5EB005DBBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4859BFBE23F8B5EB005DBBD1 /* AppCentFlickrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48ADDECF23EAF58200CC48F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +436,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4859BFC123F8B5EB005DBBD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48ADDED223EAF58200CC48F1 /* AppCentFlickr */;
+			targetProxy = 4859BFC023F8B5EB005DBBD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		48ADDEE123EAF58800CC48F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -378,6 +456,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4859BFC223F8B5EB005DBBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YH2HY6PT8;
+				INFOPLIST_FILE = AppCentFlickrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusufali.AppCentFlickrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCentFlickr.app/AppCentFlickr";
+			};
+			name = Debug;
+		};
+		4859BFC323F8B5EB005DBBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YH2HY6PT8;
+				INFOPLIST_FILE = AppCentFlickrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusufali.AppCentFlickrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCentFlickr.app/AppCentFlickr";
+			};
+			name = Release;
+		};
 		48ADDEE523EAF58800CC48F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,6 +651,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4859BFC423F8B5EB005DBBD1 /* Build configuration list for PBXNativeTarget "AppCentFlickrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4859BFC223F8B5EB005DBBD1 /* Debug */,
+				4859BFC323F8B5EB005DBBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48ADDECE23EAF58200CC48F1 /* Build configuration list for PBXProject "AppCentFlickr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

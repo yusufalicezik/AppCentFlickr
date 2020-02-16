@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A0W-RP-7e4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -24,7 +24,7 @@
                         <constraints>
                             <constraint firstItem="A0W-RP-7e4" firstAttribute="leading" secondItem="nNl-Eu-oxa" secondAttribute="leading" id="8zt-CO-Ooa"/>
                             <constraint firstItem="nNl-Eu-oxa" firstAttribute="trailing" secondItem="A0W-RP-7e4" secondAttribute="trailing" id="NsT-z5-1Oa"/>
-                            <constraint firstItem="nNl-Eu-oxa" firstAttribute="bottom" secondItem="A0W-RP-7e4" secondAttribute="bottom" id="tvj-bU-qci"/>
+                            <constraint firstAttribute="bottom" secondItem="A0W-RP-7e4" secondAttribute="bottom" id="tvj-bU-qci"/>
                             <constraint firstItem="A0W-RP-7e4" firstAttribute="top" secondItem="nNl-Eu-oxa" secondAttribute="top" id="ugw-WR-oS5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nNl-Eu-oxa"/>
@@ -47,12 +47,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CwV-bx-1EV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EV2-Ef-cTv" firstAttribute="bottom" secondItem="CwV-bx-1EV" secondAttribute="bottom" id="1qX-d9-Yy7"/>
+                            <constraint firstAttribute="bottom" secondItem="CwV-bx-1EV" secondAttribute="bottom" id="1qX-d9-Yy7"/>
                             <constraint firstItem="CwV-bx-1EV" firstAttribute="leading" secondItem="EV2-Ef-cTv" secondAttribute="leading" id="6ew-D1-xDg"/>
                             <constraint firstItem="EV2-Ef-cTv" firstAttribute="trailing" secondItem="CwV-bx-1EV" secondAttribute="trailing" id="PVt-Ly-rp0"/>
                             <constraint firstItem="CwV-bx-1EV" firstAttribute="top" secondItem="EV2-Ef-cTv" secondAttribute="top" id="nrD-LA-fZ5"/>

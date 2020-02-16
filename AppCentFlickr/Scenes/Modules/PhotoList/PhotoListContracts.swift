@@ -11,10 +11,10 @@ import Foundation
 protocol PhotoListViewModelProtocol {
     var delegate: PhotoListViewModelDelegate? { get set }
     func load()
-    func didSelectMovie(at index: Int)
+    func didSelectPhoto(at index: Int)
 }
 
-enum PhotoListViewModelOutput {
+enum PhotoListViewModelOutput: Equatable {
     case setLoading(Bool)
     case showPhotoList([PhotoPresentation])
 }
