@@ -36,7 +36,7 @@ final class PhotoListViewModel: PhotoListViewModelProtocol {
         }
     }
     
-    func didSelectMovie(at index: Int) {
+    func didSelectPhoto(at index: Int) {
         let photo = photos[index]
         let viewModel = DetailViewModel(photo: photo)
         delegate?.navigate(to: .detail(viewModel))

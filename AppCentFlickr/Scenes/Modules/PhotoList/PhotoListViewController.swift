@@ -72,7 +72,7 @@ extension PhotoListViewController: UITableViewDataSource {
     
     //Paging
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == self.photoList.count-1 {
+        if indexPath.row == self.photoList.count-2 {
             viewModel.load()
         }
     }
@@ -80,7 +80,7 @@ extension PhotoListViewController: UITableViewDataSource {
 
 extension PhotoListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        viewModel.didSelectMovie(at: indexPath.row)
+        viewModel.didSelectPhoto(at: indexPath.row)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
